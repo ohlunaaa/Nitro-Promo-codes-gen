@@ -99,8 +99,7 @@ def gen():
         print(e)
         print(F"{Fore.RED}[FAIL]{Fore.RESET} Send me a dm a440")
         gen()
-    r = s.get('https://medal.tv/api/social/discord/nitroCode', headers={'Accept':'application/json', 'Content-Type':'application/json', 'User-Agent': 'Medal-Electron/4.1674.0 (string_id_v2; no_upscale) win32/10.0.19042 (x64) Electron/8.5.5 Recorder/1.0.0 Node/12.13.0 Chrome/80.0.3987.163 Environment/production', 'Medal-User-Agent': 'Medal-Electron/4.1674.0 (string_id_v2; no_upscale) win32/10.0.19042 (x64) Electron/8.5.5 Recorder/1.0.0 Node/12.13.0 Chrome/80.0.3987.163 Environment/production', 'X-Authentication': token}).json() 
-    print(r)
+    r = s.get('https://medal.tv/api/social/discord/nitroCode', headers={'Accept':'application/json', 'Content-Type':'application/json', 'User-Agent': 'Medal-Electron/4.1674.0 (string_id_v2; no_upscale) win32/10.0.19042 (x64) Electron/8.5.5 Recorder/1.0.0 Node/12.13.0 Chrome/80.0.3987.163 Environment/production', 'Medal-User-Agent': 'Medal-Electron/4.1674.0 (string_id_v2; no_upscale) win32/10.0.19042 (x64) Electron/8.5.5 Recorder/1.0.0 Node/12.13.0 Chrome/80.0.3987.163 Environment/production', 'X-Authentication': token}).json()
     Status_code = r['httpStatusCode']
     if Status_code == 400: 
         print(F"{Fore.RED}[FAIL]{Fore.RESET} You must have a Discord connection to do this")
